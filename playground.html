@@ -10,23 +10,19 @@
     <input id="colorInput" /><button onclick="pickColor()">
       Render a color to the page</button
     ><br /><br />
-    <button onclick="updateInput('Hello World', 'p', 'red')">
-      Write Hello world to input as a red p tag
-    </button>
-    <button onclick="updateInput('Hello World', 'h1', 'red')">
-      Write Hello world to input as a red h1 tag
-    </button>
-    <button onclick="updateInput('Hello World', 'h1','purple')">
-      Write Hello world to input as purple h1 tag
-    </button>
-    <button onclick="updateInput('Hello World', 'p','purple')">
-      Write Hello world to input as purple p tag
-    </button>
+
     <div id="root"></div>
+
     <script>
+      //try blanchedalmond, it is the best
       function updateInput(message, tag, className) {
         document.getElementById("root").innerHTML = `
             <${tag} class="${className}">${message}</${tag}>
+            <style>
+                .${className}{
+                    color:${className}
+                }
+            </style>
         `;
       }
 
@@ -36,13 +32,5 @@
         console.log(color);
       }
     </script>
-    <style>
-      .purple {
-        color: purple;
-      }
-      .red {
-        color: red;
-      }
-    </style>
   </body>
 </html>
