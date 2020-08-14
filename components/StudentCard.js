@@ -1,5 +1,5 @@
-function StudentCard(name, photo, role, wOW, github) {
-  document.getElementById("studentcard").innerHTML = `
+function StudentCard(name, photo, role, wOW, github, id) {
+  document.getElementById(id).innerHTML = `
     <div class="studentcard">
     <div>
       <img
