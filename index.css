@@ -1,0 +1,28 @@
+body {
+  margin: 0px;
+}
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: fuchsia;
+  padding: 15px;
+}
+.lit {
+  background-color: chartreuse;
+  font-weight: bold;
+}
+.pagelinks {
+  width: 30vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.pup {
+  width: 10vw;
+  border-radius: 5px;
+}
+.nav-title {
+  background-color: chartreuse;
+  display: flex;
+  justify-content: center;
+}
