@@ -7,6 +7,9 @@
     <title>Test Rendering to DOM</title>
   </head>
   <body>
+    <input id="colorInput" /><button onclick="pickColor()">
+      Render a color to the page</button
+    ><br /><br />
     <button onclick="updateInput('Hello World', 'p', 'red')">
       Write Hello world to input as a red p tag
     </button>
@@ -25,6 +28,12 @@
         document.getElementById("root").innerHTML = `
             <${tag} class="${className}">${message}</${tag}>
         `;
+      }
+
+      function pickColor() {
+        let color = document.getElementById("colorInput").value;
+        updateInput("YOU PICKED THIS COLOR!", "h1", color);
+        console.log(color);
       }
     </script>
     <style>
