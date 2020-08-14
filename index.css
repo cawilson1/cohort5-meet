@@ -26,3 +26,47 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+  height: 30vw;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.project-link {
+  text-decoration: none;
+}
+.project-link:visited {
+  text-decoration: none;
+  color: blue;
+}
+.project-links {
+  display: flex;
+  justify-content: center;
+}
+
+.daves {
+  background-image: url("https://scontent-mia3-2.xx.fbcdn.net/v/t1.0-9/13620836_1052979291404432_6329844564851006760_n.jpg?_nc_cat=109&_nc_sid=85a577&_nc_ohc=di-peWdtnPUAX-UAoj5&_nc_ht=scontent-mia3-2.xx&oh=74c26738aade005c24dc557fd0ad046d&oe=5F54B8C7");
+  background-size: cover;
+}
+.palmas {
+  background-image: url("https://trespalmasacai.com/wp-content/uploads/2019/04/Shot.jpg");
+  background-size: cover;
+}
+.psych {
+  background-image: url("https://images4.alphacoders.com/857/857592.jpg");
+  background-size: cover;
+}
+.oceanside {
+  background-image: url("https://pbs.twimg.com/media/EPyU2HiWAAALlSv.jpg");
+  background-size: cover;
+}
