@@ -7,33 +7,18 @@
     <link type="text/css" href="index.css" rel="stylesheet" />
     <link type="text/css" href="about.css" rel="stylesheet" />
     <script src="components/Navbar.js" type="text/javascript"></script>
+    <script src="fakeDatabase/people.js" type="text/javascript"></script>
     <script src="components/StudentCard.js" type="text/javascript"></script>
 
     <title>About</title>
   </head>
   <body>
     <div id="navbar"></div>
-    <div id="studentcard"></div>
-    <div id="studentcardBen"></div>
+    <div id="studentcards"></div>
   </body>
 
   <script>
     render("About");
-    StudentCard(
-      "Casey W.",
-      "https://images.media-allrecipes.com/userphotos/429450.jpg",
-      "Instructor",
-      "Do it",
-      "https://github.com/cawilson1",
-      "studentcard"
-    );
-    StudentCard(
-      "Ben P.",
-      "https://bit.ly/2DTNFLF",
-      "Student",
-      "Be a man",
-      "https://github.com/Benanna2019",
-      "studentcardBen"
-    );
+    StudentCards();
   </script>
 </html>
