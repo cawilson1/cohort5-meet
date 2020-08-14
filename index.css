@@ -70,3 +70,10 @@ body {
   background-image: url("https://pbs.twimg.com/media/EPyU2HiWAAALlSv.jpg");
   background-size: cover;
 }
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  color: blue;
+}
