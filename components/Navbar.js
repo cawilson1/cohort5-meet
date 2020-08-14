@@ -24,18 +24,18 @@ function Navbar(currentPage) {
         />
         </div>
         <div class="pagelinks">
-        <div ${classIsLit(
-          currentPage,
-          "home"
-        )}><a href="index.html">Home</a></div>
-        <div ${classIsLit(
-          currentPage,
-          "about"
-        )}><a href="about.html">About</a></div>
-        <div ${classIsLit(
-          currentPage,
-          "store"
-        )}><a href="store.html">Store</a></div>
+            <div ${classIsLit(
+              currentPage,
+              "home"
+            )}><a href="index.html">Home</a></div>
+            <div ${classIsLit(
+              currentPage,
+              "about"
+            )}><a href="about.html">About</a></div>
+            <div ${classIsLit(
+              currentPage,
+              "store"
+            )}><a href="store.html">Store</a></div>
         </div>
         <div>Sign In</div>
         </div>
