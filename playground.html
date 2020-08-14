@@ -16,7 +16,7 @@
     <script>
       //try blanchedalmond, it is the best
       function updateInput(message, tag, className) {
-        document.getElementById("root").innerHTML = `
+        document.getElementById("root").innerHTML += `
             <${tag} class="${className}">${message}</${tag}>
             <style>
                 .${className}{
