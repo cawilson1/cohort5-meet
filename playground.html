@@ -7,22 +7,33 @@
     <title>Test Rendering to DOM</title>
   </head>
   <body>
-    <button onclick="updateInput('Hello World', 'p')">
-      Write Hello world to input as p tag
+    <button onclick="updateInput('Hello World', 'p', 'red')">
+      Write Hello world to input as a red p tag
     </button>
-    <button onclick="updateInput('Hello World', 'h1')">
-      Write Hello world to input as h1 tag
+    <button onclick="updateInput('Hello World', 'h1', 'red')">
+      Write Hello world to input as a red h1 tag
     </button>
-    <button onclick="updateInput('Hello World')">
+    <button onclick="updateInput('Hello World', 'h1','purple')">
       Write Hello world to input as purple h1 tag
+    </button>
+    <button onclick="updateInput('Hello World', 'p','purple')">
+      Write Hello world to input as purple p tag
     </button>
     <div id="root"></div>
     <script>
-      function updateInput(message, tag) {
+      function updateInput(message, tag, className) {
         document.getElementById("root").innerHTML = `
-            <${tag}>${message}</${tag}>
+            <${tag} class="${className}">${message}</${tag}>
         `;
       }
     </script>
+    <style>
+      .purple {
+        color: purple;
+      }
+      .red {
+        color: red;
+      }
+    </style>
   </body>
 </html>
