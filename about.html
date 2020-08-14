@@ -7,29 +7,23 @@
     <link type="text/css" href="index.css" rel="stylesheet" />
     <link type="text/css" href="about.css" rel="stylesheet" />
     <script src="components/Navbar.js" type="text/javascript"></script>
+    <script src="components/StudentCard.js" type="text/javascript"></script>
 
     <title>About</title>
   </head>
   <body>
     <div id="navbar"></div>
-    <script>
-      render("About");
-    </script>
-
-    <div class="studentcard">
-      <div>
-        <img
-          class="profileimage"
-          src="https://images.media-allrecipes.com/userphotos/429450.jpg"
-          alt="img"
-        />
-        <h2>Casey W.</h2>
-      </div>
-      <div class="details">
-        <div>Instructor</div>
-        <div>Do it</div>
-        <div><a href="https://github.com/cawilson1">Github</a></div>
-      </div>
-    </div>
+    <div id="studentcard"></div>
   </body>
+
+  <script>
+    render("About");
+    StudentCard(
+      "Casey W.",
+      "https://images.media-allrecipes.com/userphotos/429450.jpg",
+      "Instructor",
+      "Do it",
+      "https://github.com/cawilson1"
+    );
+  </script>
 </html>
